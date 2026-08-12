@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../css/Project.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="icon" href="../assets/logo.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="logo">
+        <img
+          src="../assets/logo.jpg"
+          alt="AESA Automobiles Logo"
+          width="60"
+          height="60"
+        />AESA
+      </div>
+      <div class="far">
+        <div class="nav-links">
+          <a href="home.html"><i class="fas fa-home"></i></a>
+        </div>
+        <div class="CartIcon">
+          <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          <div class="cart-count" id="cart-count">0</div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="login-page cart-page">
+      <div class="login-container cart-container">
+        <div class="login-brand cart-header">
+          <div>
+            <h2>Shopping Cart</h2>
+            <p>Review the items you added and proceed with checkout.</p>
+          </div>
+          <a class="btn2" href="home.html">Continue shopping</a>
+        </div>
+
+        <div id="cart-items" class="categories cart-items"></div>
+
+        <div class="login-field cart-summary">
+          <p id="cart-empty" class="cart-empty"></p>
+          <div class="cart-summary-row">
+            <span class="cart-total-label">Total:</span>
+            <span id="cart-total" class="cart-total-value"></span>
+            <button id="clear-cart" class="btn4 clear-cart-btn" type="button">
+              Clear Cart
+            </button>
+            <button id="checkout-btn" class="btn3" type="button">
+              Checkout
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../js/loader.js"></script>
+    <script src="../js/cart.js"></script>
+  </body>
+</html>
