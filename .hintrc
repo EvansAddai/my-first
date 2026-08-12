@@ -17,6 +17,16 @@
           "min-height: auto"
         ]
       }
-    ]
+    ],
+    "meta-viewport": "off",
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "template[shadowrootmode]"
+        ]
+      }
+    ],
+    "no-inline-styles": "off"
   }
 }
